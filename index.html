@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Katik</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> <span class="title">Katik</span> <span class="subtitle">Kalkulator Matematik</span></h1> <br>
+        <div class="card"> <span class="welcome">Welcome to Katik</span>
+            <p class="intro">Hi Sobat, selamat datang di Katik :] </p><br>
+           <p class="intro2"> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        </div> <br>
+
+        <p class="luas-p">Luas Persegi</p> <br>
+        <div class='square'></div><br>
+
+        <div class="formula">
+            <p id="luas">Rumus Luas Persegi: <br> 
+            L= S x S </p> 
+            <br>
+            <p id="ket">Di mana: <br> 
+            L= Luas <br>
+            S= Sisi</p>
+        </div>
+        <br>
+        <div>
+            <h2>Hitung Luas Persegi</h2>
+            <input id="sisi-luas" name="sisi-luas">
+
+            <p id="rumus-luas"> L = S x S</p>
+            <p id="perhitungan-luas"></p>
+            <p id="output-luas">L = ... </p>
+
+            <button name="hitung-luas" onclick="hitungLuas()">Hitung</button>
+            <button name="reset-luas">Reset</button>
+        </div>
+
+        <br>
+
+        <h3>Keliling Persegi</h3> <br>
+        <div class='square'></div><br>
+        <div class="formula">
+            <p id="keliling">Rumus Keliling Persegi: <br> 
+            K= 4 x S </p> 
+            <br>
+            <p id="ket">Di mana: <br> 
+            K= Keliling <br>
+            S= Sisi</p>
+        </div>
+        <div>
+            <h4>Hitung Keliling Persegi</h4>
+            <input id="sisi-keliling" name="sisi-keliling">
+
+            <p id="rumus-keliling"> K = 4 x S</p>
+            <p id="perhitungan-keliling"></p>
+            <p id="output-keliling">K = ... </p>
+
+            <button name="hitung-keliling" onclick="hitungKeliling()">Hitung</button>
+            <button name="reset-keliling">Reset</button>
+        </div>
+
+        <script src="js/script.js"></script>
+
+
+
+    </body>
+</html>
